@@ -1,0 +1,23 @@
+{
+  "name": "bb-partner-profiler",
+  "version": "1.0.0",
+  "description": "HUMBEE Partner Profiler & Lead Intelligence Dashboard",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "seed": "node seed.js"
+  },
+  "engines": {
+    "node": ">=16.x",
+    "npm": ">=8.x"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "sqlite3": "^5.0.2"
+  },
+  "author": "Antigravity",
+  "license": "ISC"
+}

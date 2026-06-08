@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: humbee-profiler
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_FILE
+        value: /opt/render/project/src/leads.db
+    disk:
+      name: database
+      mountPath: /opt/render/project/src
+      sizeGB: 1
